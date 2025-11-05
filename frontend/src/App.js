@@ -34,7 +34,7 @@ function App() {
       <header className="App-header">
         <h1>Current Weather in Hong Kong</h1>
         <div className="weather-card">
-          <h2>{place}</h2>
+          <h2>Place: {place}</h2>
           <p>
             <strong>Temperature:</strong> {temp}°C
           </p>

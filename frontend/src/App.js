@@ -34,17 +34,17 @@ function App() {
       <header className="App-header">
         <h1>Current Weather in Hong Kong</h1>
         <div className="weather-card">
-          <h2>Place: {place}</h2>
+          <h2>Place: {place ?? "-"}</h2>
           <p>
-            <strong>Temperature:</strong> {temp}°C
+            <strong>Temperature:</strong> {temp ?? "- "}°C
           </p>
           <p>
-            <strong>Humidity:</strong> {humidity}%
+            <strong>Humidity:</strong> {humidity ?? "- "}%
           </p>
           <p>
             <small>
               Updated:{" "}
-              {new Date(weather.temperature.recordTime).toLocaleString()}
+              {new Date(weather.temperature?.recordTime).toLocaleString()}
             </small>
           </p>
         </div>
